@@ -33,7 +33,6 @@ class ArtikelController extends Controller
         return view('admin/artikel', $payload);
     }
 
-    // KERJAAN FIRHAN
     public function prosesTambah(Request $request){
         $artikel = new Artikel();
         $artikel->lokasi = $request->input('lokasi');
