@@ -1,5 +1,10 @@
 @extends ('admin/master')
 @section ('isi')
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home > Komentar</li>
+        </ol>
+      </nav>
 <div class="table-responsive">
                     <div class="table-wrapper">
                         <div class="table-title">
@@ -50,7 +55,6 @@
                         </div>
                     </div>
                 </div>
-            <!-- Edit Modal HTML -->
 
             <!-- Delete Modal HTML -->
             @foreach ($komentar as $k)
@@ -62,13 +66,9 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">Delete User</h4>
+                                <h5 class="modal-title">Apakah Anda yakin ingin menghapus data ini?</h5>
                                 <button type="button" class="close" data-dismiss="modal"
                                     aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Apakah Anda yakin ingin menghapus data ini?</p>
-                                <p class="text-warning"><small>Tindakan ini tidak bisa dibatalkan.</small></p>
                             </div>
                             <div class="modal-footer">
                                 <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancel">

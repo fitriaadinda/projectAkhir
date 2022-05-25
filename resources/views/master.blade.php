@@ -19,16 +19,16 @@
 <!-- header section starts  -->
 <header>
     <div id="menu-bar" class="fas fa-bars"></div>
-    <a href="index.php" class="logo"><img src="/images/logo.png" width="100px"></a>
+    <a href="/" class="logo"><img src="/images/logo.png" width="100px"></a>
     <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="/">home</a>
         <a href="#visit">visit</a>
         <a href="#services">services</a>
         <a href="#contact">contact</a>
     </nav>
     <div class="icons">
         <i class="fas fa fa-search" id="search-btn"></i>
-        <i class="fas fa fa-user" id="login-btn"></i>
+        <a href="/login"><i class="fas fa fa-user" id="login-btn"></i></a>
     </div>
     
 

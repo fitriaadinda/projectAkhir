@@ -53,7 +53,7 @@
         <div class="image">
             <img src="images/contact-img.svg" alt="">
         </div>
-        <form action="#" method="#">
+        <form action="tamu.php" method="POST">
             <div class="inputBox">
                 <input type="text" placeholder="Nama" name='nama'>
                 <input type="email" placeholder="e-Mail" name='email'>

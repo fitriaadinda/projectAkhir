@@ -1,5 +1,10 @@
 @extends ('admin/master')
 @section ('isi')
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
       <div class="row">
         <div class="col-md-12 grid-margin">
           <div class="card">
@@ -17,7 +22,7 @@
                 <div class=" col-md -6 col-xl report-inner-card">
                   <div class="inner-card-text">
                     <span class="report-title">ARTIKEL</span>
-                    <h4>10</h4>
+                    <h4>{{ $artiktel = DB::table('04-artikel')->count(); }}</h4>
 
                   </div>
                   <div class="inner-card-icon bg-primary">
@@ -27,7 +32,7 @@
                 <div class="col-md-6 col-xl report-inner-card">
                   <div class="inner-card-text">
                     <span class="report-title">USERS</span>
-                    <h4>3</h4>
+                    <h4>{{ $user = DB::table('users')->count(); }}</h4>
 
                   </div>
                   <div class="inner-card-icon bg-danger">
@@ -75,7 +80,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                   </ol>
                   <div class="carousel-inner mt-3">
-
+                    
                     <div class="carousel-item active">
                       <img
                         src="https://images.unsplash.com/photo-1476158085676-e67f57ed9ed7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"

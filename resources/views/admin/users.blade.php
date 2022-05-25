@@ -1,6 +1,10 @@
 @extends ('admin/master')
 @section ('isi')
-
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home > Users</li>
+        </ol>
+      </nav>
 <div class="container-xl">
                 <div class="table-responsive">
                     <div class="table-wrapper">
@@ -64,8 +68,8 @@
                 </div>
             </div>
             <!-- Tambah Modal HTML -->
-            <div id="addUserModal" class="modal fade">
-                <div class="modal-dialog">
+            <div id="addUserModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <form method="POST">
                             @csrf   
@@ -110,8 +114,8 @@
 
             @foreach($user as $u)
             <!-- Edit Modal HTML -->
-            <div id="editUserModal-{{$u->id}}" class="modal fade">
-                <div class="modal-dialog">
+            <div id="editUserModal-{{$u->id}}" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                     <form method="post" action="{{url('/users/'.$u->id)}}">
                             @csrf
@@ -147,7 +151,7 @@
                             </div>
                             <div class="modal-footer">
                                 <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Batal">
-                                <input type="submit" class="btn btn-success" value="Simpan">
+                                <input type="submit" class="btn btn-success" value="Ubah">
                             </div>
 
                         </form>
@@ -166,13 +170,9 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">Delete User</h4>
+                            <h5 class="modal-title">Apakah Anda yakin ingin menghapus data ini?</h5>
                                 <button type="button" class="close" data-dismiss="modal"
                                     aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Apakah Anda yakin ingin menghapus data ini?</p>
-                                <p class="text-warning"><small>Tindakan ini tidak bisa dibatalkan.</small></p>
                             </div>
                             <div class="modal-footer">
                                 <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancel">

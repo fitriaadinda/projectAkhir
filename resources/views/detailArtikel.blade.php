@@ -2,9 +2,9 @@
 @section ('isi')
 <img class="image-detail" src="/images/{{ $artikel->gambar }}">
  <ul class="breadcrumb">
-         <li><a href="index.php">Home</a></li>
+         <li><a href="/">Home</a></li>
          <li><a href="#">Visit</a></li>
-         <li></li>
+         <li><a href="#">{{ $artikel->judul_artikel }}</a></li>
  </ul>
  <section class="detailpost">
          <h4 style="text-align: center; font-size: 26px;">{{ $artikel->judul_artikel }}</h4>

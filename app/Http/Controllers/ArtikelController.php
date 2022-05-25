@@ -33,6 +33,12 @@ class ArtikelController extends Controller
         return view('admin/artikel', $payload);
     }
 
+    public function dashboard()
+    {
+        $payload['artikel'] = Artikel::all();
+        return view('admin/home', $payload);
+    }
+
     public function prosesTambah(Request $request){
         $artikel = new Artikel();
         $artikel->lokasi = $request->input('lokasi');

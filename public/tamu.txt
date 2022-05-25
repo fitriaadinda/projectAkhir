@@ -1,10 +1,7 @@
 
- Wisnu|wisnu@1|1|mana
- dinda|ngetest@superadmin.com|9743422|Jl. Semangu
- dinda|ngetest@superadmin.com|9|
- Abang|ngetest@magang.com|9999|sdjsa
- dindaaa|fitriaadindarahmawati@gmail.com|08334576687|Jl.Semangu
- dindaaa|fitriaadindaa@student.ub.ac.id|099898988|Jl.Semangu
- almaas|fitriaadindaaa@studnet.ub.ac.id|09887876566|Jl.Semangu
- dindaaa|fitriaadindaa@studnet.ub.ac.id|08778788787|Jl.Semangu
- dindaaa|fitriaadindaa@studnet.ub.ac.id|556676678899|Jl.Semangu
+
+| Nama          : dindaaa 
+| E-mail        : fitriaadindaaa@student.ub.ac.id 
+| Nomor HP      : 45334        
+| Alamat        : Jl.Semangu       
+|-----------------------------------------------------------------

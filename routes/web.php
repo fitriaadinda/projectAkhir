@@ -19,9 +19,7 @@ Route::get('/komentar', [KomentarController::class, 'index'])->middleware('auth'
 Route::delete('/komentar/{id}', [KomentarController::class, 'prosesDelete'])->middleware('auth');
 
 //Admin Dashboard
-Route::get('/admin', function () {
-    return view('admin/home');
-})->middleware('auth');
+Route::get('/admin', [ArtikelController::class, 'dashboard'])->middleware('auth');
 
 //Detail Artikel User
 Route::get('/detail-artikel/{id}', [ArtikelController::class, 'detailArtikel']);
