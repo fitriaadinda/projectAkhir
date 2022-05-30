@@ -33,7 +33,7 @@ Route::put('/users/{id}', [UserController::class, 'prosesUpdate'])->middleware('
 Route::delete('/users/{id}', [UserController::class, 'prosesDelete'])->middleware('auth');
 
 //Login Logout
-Route::get('/login', [LoginController::class, 'viewLogin']);
+Route::get('/login', [LoginController::class, 'viewLogin'])->name('login');
 Route::post('/login', [LoginController::class, 'prosesLogin']);
 Route::get('/logout', [LoginController::class, 'logout']);
 

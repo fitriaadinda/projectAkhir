@@ -113,4 +113,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
     integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
   </script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script type="text/javascript" src="{{ asset('assets/toggle.js') }}"></script>
+  @if (session('success_message'))
+  <script>
+      Swal.fire({
+          title: 'Berhasil!',
+          text: '{{ session('success_message') }}',
+          icon: 'success',
+      })
+
+  </script>
+  @endif
+  @if (session('error_message'))
+  <script>
+    Swal.fire({
+      title: 'Gagal!',
+      text: '{{ session('error_message') }}',
+      icon: 'error',
+    })
+  </script>
+  @endif

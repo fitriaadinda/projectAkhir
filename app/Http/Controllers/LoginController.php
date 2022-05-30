@@ -21,10 +21,10 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('/admin');
+            return redirect()->intended('/admin')->with('success_message', 'Anda Berhasil login');
         }
 
-        return redirect()->back();
+        return redirect()->back()->with('error_message', 'Anda gagal login');
     }
 
     public function logout(Request $request) {
